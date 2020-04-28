@@ -76,6 +76,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -137,6 +138,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 10;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // groupBox1
             // 
@@ -159,7 +161,7 @@
             this.groupBox2.Size = new System.Drawing.Size(163, 87);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Choose Model";
+            this.groupBox2.Text = "Choose Package";
             // 
             // radioButton1
             // 
@@ -207,6 +209,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Standard";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton5
             // 
@@ -218,51 +221,53 @@
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "LX";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(108, 80);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 13);
+            this.label8.Size = new System.Drawing.Size(34, 13);
             this.label8.TabIndex = 16;
-            this.label8.Text = "0";
+            this.label8.Text = "$0.00";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(108, 135);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.Size = new System.Drawing.Size(34, 13);
             this.label9.TabIndex = 17;
-            this.label9.Text = "0";
+            this.label9.Text = "$0.00";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(108, 242);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 13);
+            this.label10.Size = new System.Drawing.Size(34, 13);
             this.label10.TabIndex = 18;
-            this.label10.Text = "0";
+            this.label10.Text = "$0.00";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(108, 288);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(13, 13);
+            this.label11.Size = new System.Drawing.Size(34, 13);
             this.label11.TabIndex = 19;
-            this.label11.Text = "0";
+            this.label11.Text = "$0.00";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(108, 335);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(13, 13);
+            this.label12.Size = new System.Drawing.Size(34, 13);
             this.label12.TabIndex = 20;
-            this.label12.Text = "0";
+            this.label12.Text = "$0.00";
             // 
             // btn_compute
             // 
@@ -323,6 +328,7 @@
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
             this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // Form1
             // 
