@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 // 4/29 - The name field and trade in field clears with new Button.  Hook up labels to reset values and reset radials.
 // 4/29 - Hook up sales tax and total value
+// 4/29 - Clear all fields with New on UI and in menu bar.
 
 namespace PriceCheckApp
 {
@@ -99,19 +100,32 @@ namespace PriceCheckApp
 
         private void btn_compute_Click(object sender, EventArgs e)
         {
+            // updates all GUI text if precheck passes
             bool isPrePassed = subTotalPreCheck();
             if (isPrePassed == true)
             {
                 subtotal = basePrice + package + tradeIn;
-                label10.Text = subtotal.ToString();
+                label10.Text = ("$" +subtotal.ToString());
 
+                //get percentage for tax (8.4%) and updates
+                double salesTax = (8.4 / 100) * subtotal;
+                label11.Text = System.Convert.ToString("$" + salesTax);
+
+                //adds subtotal and tax for total
+                totalPrice = salesTax + subtotal;
+                label12.Text = System.Convert.ToString("$" + totalPrice);
+                
                 // reset booleans
-                resetBooleans();
+                resetCheckTriggers();
+
+                // reset values (labels, etc)
+
             }
 
             else
             {
                 MessageBox.Show("Please make sure Name, Trade-in, Make and Package are filled in.");
+                clearAll();
             }
         }
 
@@ -154,20 +168,53 @@ namespace PriceCheckApp
             return hasPreCheckPassed;
         }
 
-        private void resetBooleans()
+        private void resetCheckTriggers()
         {
             hasPreCheckPassed = false;
             isMakeChecked = false;
             isPackageChecked = false;
             isNameFilled = false;
             isTradeInFilled = false;
+
+            // check for the check
             hasPreCheckPassed = false;
         }
 
         private void btn_new_Click(object sender, EventArgs e)
         {
+            clearAll();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void clearAll()
+        {
+            resetCheckTriggers();
             textBox1.Clear();
             textBox4.Clear();
+            clearAllLabels();
+        }
+
+        private void clearAllLabels()
+        {
+            label8.Text = "$0.00";
+            label9.Text = "$0.00";
+            label10.Text = "$0.00";
+            label11.Text = "$0.00";
+            label12.Text = "$0.00";
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+            radioButton5.Checked = false;
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clearAll();
         }
     }
 }
