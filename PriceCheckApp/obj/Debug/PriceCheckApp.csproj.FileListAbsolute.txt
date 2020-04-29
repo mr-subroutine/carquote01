@@ -7,3 +7,4 @@ C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Debug\PriceCheckApp.
 C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Debug\PriceCheckApp.csproj.CoreCompileInputs.cache
 C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Debug\PriceCheckApp.exe
 C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Debug\PriceCheckApp.pdb
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Debug\PriceCheckApp.csprojAssemblyReference.cache
