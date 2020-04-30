@@ -8,10 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// 4/29 - The name field and trade in field clears with new Button.  Hook up labels to reset values and reset radials.
-// 4/29 - Hook up sales tax and total value
-// 4/29 - Clear all fields with New on UI and in menu bar.
-
 namespace PriceCheckApp
 {
     public partial class Form1 : Form
@@ -117,9 +113,6 @@ namespace PriceCheckApp
                 
                 // reset booleans
                 resetCheckTriggers();
-
-                // reset values (labels, etc)
-
             }
 
             else

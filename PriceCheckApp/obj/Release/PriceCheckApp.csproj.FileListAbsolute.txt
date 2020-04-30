@@ -1,0 +1,9 @@
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\bin\Release\PriceCheckApp.exe.config
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\bin\Release\PriceCheckApp.exe
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\bin\Release\PriceCheckApp.pdb
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Release\PriceCheckApp.Form1.resources
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Release\PriceCheckApp.Properties.Resources.resources
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Release\PriceCheckApp.csproj.GenerateResource.cache
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Release\PriceCheckApp.csproj.CoreCompileInputs.cache
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Release\PriceCheckApp.exe
+C:\Users\gamef\source\repos\PriceCheckApp\PriceCheckApp\obj\Release\PriceCheckApp.pdb
